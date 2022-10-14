@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>CatRom</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+  </head>
+    <body>
+        <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img  src="assets/images/logo_fin.png" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Search End ***** -->
+                    <!--<div class="search-input">
+                      <form id="search" action="#">
+                        <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                        <i class="fa fa-search"></i>
+                      </form>
+                    </div> -->
+                    <!-- ***** Search End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="browse.html">Browse</a></li>
+                        <li><a href="guides.html" class="active">Guides</a></li>
+                        
+                        <li><a href="streams.html">ROMs</a></li>
+                        <li><a href="profile.html">Profile <img src="assets/images/logo_fin.png" alt=""></a></li>
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+  <!-- ***** Guides Start ***** -->
+  <div class="gaming-library">
+    <div class="col-lg-12">
+      <div class="heading-section">
+        <h4><em>Official ROMs</em> Library</h4>
+      </div>
+      <div class="item">
+        <ul>
+          <li><img src="assets/images/12.5.jpg" alt="" class="templatemo-item"></li>
+          <li><h4>MIUI 12.5</h4><span>Android 11</span></li>
+          <li><h4>Date of last update</h4><span>12/09/2022</span></li>
+          <li><h4>Size</h4><span>634 H 22 Mins</span></li>
+          <li><h4>Region</h4><span>Global</span></li>
+          <li><div class="main-border-button"><a href="#">Donwload</a></div></li>
+        </ul>
+      </div>
+      <div class="item">
+        <ul>
+          <li><img src="assets/images/12.jpg" alt="" class="templatemo-item"></li>
+          <li><h4>MIUI 12</h4><span>Android 10</span></li>
+          <li><h4>Date of last update</h4><span>09/02/2022</span></li>
+          <li><h4>Size</h4><span>740 H 52 Mins</span></li>
+          <li><h4>Region</h4><span>Global</span></li>
+          <li><div class="main-border-button"><a href="#">Donwload</a></div></li>
+        </ul>
+      </div>
+      <div class="item last-item">
+        <ul>
+          <li><img src="assets/images/12.5.jpg" alt="" class="templatemo-item"></li>
+          <li><h4>MIUI 12.5</h4><span>Android 11</span></li>
+          <li><h4>Date of last update</h4><span>18/07/2022</span></li>
+          <li><h4>Size</h4><span>892 H 14 Mins</span></li>
+          <li><h4>Region</h4><span>India</span></li>
+          <li><div class="main-border-button"><a href="#">Donwload</a></div></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <div class="main-button">
+        <a href="browse.html">View More</a>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Official Library End ***** -->
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+  </div>
+  
+  <div id="London" class="tabcontent">
+    <h3>London</h3>
+    <p>London is the capital city of England.</p>
+  </div>
+  
+  <div id="Paris" class="tabcontent">
+    <h3>Paris</h3>
+    <p>Paris is the capital of France.</p> 
+  </div>
+  
+  <div id="Tokyo" class="tabcontent">
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+  
+  <script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2022 <a href="https://github.com/KovaliykSerhii">Cat ROMs</a> Company. All rights reserved. 
+          
+          <br>Design: <a href="https://github.com/KovaliykSerhii" target="_blank" title="Serhii">Serhii Kovaliyk</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script type="module"></script>
+    </body>
+
+</html>    
+   
+  
+
+
+   
+
+
+  
+
+
+
+
+
+
+
+
+
+
+ 
